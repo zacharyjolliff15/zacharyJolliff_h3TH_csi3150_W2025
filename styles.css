@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +43,30 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 700px; 
   background: url('trip-to-alaska.jpg') no-repeat center center / cover;
 }
+
+#page3 {
+    width: 100%;
+    min-height: 700px; 
+    background: url('experience-kenai.jpg') no-repeat center center / cover;
+  }
+
+#page4 {
+    width: 100%;
+    min-height: 700px; 
+    background: url('bears-trains-icebergs.jpg') no-repeat center center / cover;
+  }
+  #page5 {
+    width: 100%;
+    min-height: 700px; 
+    background: url('numbers.avif') no-repeat center center / cover;
+  }
+  #page6 {
+    width: 100%;
+    min-height: 700px; 
+    background: url('wolf.webp') no-repeat center center / cover;
+  }
+
+
 
 .flexbox-page-1 {
   height: 100%;
