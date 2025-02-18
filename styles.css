@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     width: 100%;
     display: flex;
+    gap: 269px;
 }
 
 .flexbox-page-2b{
@@ -153,9 +154,12 @@ h1, h2, h3, h4, h5, h6 {
 .read-more-btn{
     background-color: rgb(231, 195, 51);
     color: black;
-    padding: 5px 15px 5px 15px;
+    padding: 8px 18px 8px 18px;
 }
 
-#trip-to-alaska{
-    
+#trip-to-alaska { 
+    color: rgb(231, 195, 51); 
+    font-size: 60px; 
+    font-weight: normal; 
+    margin: -105px 0px 0px 110px;
 }
