@@ -39,6 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   width: 100%;
   min-height: 700px; 
   background: url('trip-to-alaska.jpg') no-repeat center center / cover;
@@ -76,6 +81,24 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
 }
+
+.flexbox-page-2a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.flexbox-page-2b{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
 .dropdown {
   position: relative;    
   display: inline-block;
@@ -125,4 +148,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown:hover .arrow {
   transform: rotate(180deg);
+}
+
+.read-more-btn{
+    background-color: rgb(231, 195, 51);
+    color: black;
+    padding: 5px 15px 5px 15px;
+}
+
+#trip-to-alaska{
+    
 }
