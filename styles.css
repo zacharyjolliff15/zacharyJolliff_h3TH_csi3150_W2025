@@ -5,97 +5,98 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
 
-  
-  #deerlogo {
-      width: 100px;
-      height: 100px;
-  }
-  
-  #lets-start {
-      width: 100px;
-      height: 100px;
-  }
-  
-  #alaska {
-      font-size: 100px;
-      color: rgb(231, 195, 51);
-      font-weight: normal;
-  }
-  
-  #tour-and-travel {
-    color: white;
-    font-weight: normal;
-  }
+#deerlogo {
+  width: 100px;
+  height: 100px;
+}
 
-  #page1{
-    width: 100%;
-    min-height: 500px; 
-    background: url('backgroundpg1.webp') no-repeat center center / cover;
-  }
+#lets-start {
+  width: 100px;
+  height: 100px;
+}
 
-  #page2{
-    width: 100%;
-    min-height: 700px; 
-    background: url('trip-to-alaska.jpg') no-repeat center center / cover;
-  }
-  
-.flexbox-page-1{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#alaska {
+  font-size: 100px;
+  color: rgb(231, 195, 51);
+  font-weight: normal;
+}
+
+#tour-and-travel {
+  color: white;
+  font-weight: normal;
+}
+
+#page1 {
+  width: 100%;
+  min-height: 500px; 
+  background: url('backgroundpg1.webp') no-repeat center center / cover;
+}
+
+#page2 {
+  width: 100%;
+  min-height: 700px; 
+  background: url('trip-to-alaska.jpg') no-repeat center center / cover;
+}
+
+.flexbox-page-1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .dropdown {
-    position: relative;    
-    display: inline-block;
-    padding-top: 20px;
-  }
-  
-  .arrow {
-    display: inline-block;
-    width: 0; 
-    height: 0;
-    cursor: pointer;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 25px solid rgb(231, 195, 51);        
-    transition: transform 0.7s ease;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;  
-    left: 50%;
-    transform: translateX(-50%); 
-    min-width: 100px;
-    background: #fff;
-    border: 1px solid #ccc;
-    list-style: none;
-    z-index: 999;
-  }
-  
-  .dropdown-content li {
-    padding: 8px 10px;
-  }
-  
-  .dropdown-content li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .arrow {
-    transform: rotate(180deg);
-  }
+  position: relative;    
+  display: inline-block;
+  padding-top: 10px;  
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid rgb(231, 195, 51);
+  transition: transform 0.7s ease;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  top: 15px; 
+ 
+
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  z-index: 999;
+}
+
+.dropdown-content li {
+  padding: 8px 10px;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
