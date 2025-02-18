@@ -119,6 +119,10 @@ h1, h2, h3, h4, h5, h6 {
     background: url('wolf.webp') no-repeat center center / cover;
   }
 
+ #page7{
+    width: 100%;
+    min-height: 700px; 
+ }
 
 
 .flexbox-page-1 {
@@ -273,3 +277,55 @@ h1, h2, h3, h4, h5, h6 {
     background: url('testamonial-person.jpg') no-repeat center center / cover;
     border-radius: 50%;
   }
+
+  .carousel-container {
+    position: relative;       
+    width: 100%;             
+    overflow: hidden;        
+    background: #f0f0f0;     
+    border-radius: 6px;      
+  }
+  
+  .carousel-viewport {
+    overflow: hidden;        
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .carousel-track img {
+    /*
+      I want 4 images visible at a time within the container.
+      That means each image gets 25% width (4 * 25% = 100%).
+    */
+    width: 25%; 
+    flex-shrink: 0;          
+  }
+  
+  .right-arrow {
+    right: 25px;
+            }
+        .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: yellow;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 4px;
+}
+  
+  .left-arrow {
+    left: 10px;
+  }
+    
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
