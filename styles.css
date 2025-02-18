@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 70px;
   }
   #page6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     min-height: 700px; 
     background: url('wolf.webp') no-repeat center center / cover;
@@ -259,3 +263,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
   }
   
+  .testimonal-picture{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: 200px;
+    background: url('testamonial-person.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+  }
