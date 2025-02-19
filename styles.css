@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,10 +39,100 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   width: 100%;
   min-height: 700px; 
   background: url('trip-to-alaska.jpg') no-repeat center center / cover;
 }
+
+#page3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 700px; 
+    background: url('experience-kenai.jpg') no-repeat center center / cover;
+    gap: 50px;
+  }
+
+  #page3a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 400px; 
+    background: url('anchorage-brews-tour.jpeg') no-repeat center center / cover;
+  }
+  #page3b {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 400px; 
+    background: url('anchorage-city-tour.jpg') no-repeat center center / cover;
+  }
+  #page3c {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 400px; 
+    background: url('anchorage-museum.jpg') no-repeat center center / cover;
+  }
+
+
+
+#page4 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px; 
+    background: url('bears-trains-icebergs.jpg') no-repeat center center / cover;
+    gap: 100px;
+  }
+  #page5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px; 
+    background: url('numbers.avif') no-repeat center center / cover;
+    gap: 70px;
+  }
+  #page6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 700px; 
+    background: url('wolf.webp') no-repeat center center / cover;
+  }
+
+ #page7{
+    width: 100%;
+    min-height: 362px; 
+ }
+
+ #page8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 700px; 
+    background: url('contact-us.jpeg') no-repeat center center / cover;
+ }
+
 
 .flexbox-page-1 {
   height: 100%;
@@ -50,13 +142,41 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
 }
+
+.flexbox-page-2a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 269px;
+}
+
+.flexbox-page-2b{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexbox-page-3a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
 .dropdown {
   position: relative;    
   display: inline-block;
   padding-top: 10px;  
 }
 
-.arrow {
+.arrow1 {
   display: inline-block;
   width: 0;
   height: 0;
@@ -99,4 +219,196 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown:hover .arrow {
   transform: rotate(180deg);
+}
+
+.read-more-btn{
+    background-color: rgb(231, 195, 51);
+    color: black;
+    padding: 8px 18px 8px 18px;
+}
+
+#trip-to-alaska { 
+    color: rgb(231, 195, 51); 
+    font-size: 60px; 
+    font-weight: normal; 
+    margin: -105px 0px 0px 110px;
+}
+
+#p3-header{
+    color: rgb(231, 195, 51); 
+    font-size: 30px; 
+    font-weight: normal; 
+}
+
+#anchorage-text{
+    color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+.page3-flex-text{
+    margin: 0px 120px 10px 0px;
+}
+
+.bears-trains-text{
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    width: 175px; 
+    height: 175px; 
+    background-color: black; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .numbers{
+    color: rgb(231, 195, 51);
+    font-weight: normal;
+    font-size: 50px;
+  }
+
+  .sub-numbers{
+    color: white;
+    font-size: 15px;
+  }
+  
+  .testimonal-picture{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 13%;
+    height: 200px;
+    background: url('testamonial-person.jpg') no-repeat center center / cover;
+    border-radius: 50%;
+  }
+
+  .carousel-container {
+    position: relative;       
+    width: 100%;             
+    overflow: hidden;        
+    background: #f0f0f0;     
+    border-radius: 6px;      
+  }
+  
+  .carousel-viewport {
+    overflow: hidden;        
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .carousel-track img {
+    /*
+      I want 4 images visible at a time within the container.
+      That means each image gets 25% width (4 * 25% = 100%).
+    */
+    width: 25%; 
+    flex-shrink: 0;          
+  }
+  
+  .right-arrow {
+    right: 25px;
+            }
+        .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: yellow;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 4px;
+}
+  
+  .left-arrow {
+    left: 10px;
+  }
+    
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .social-media-icons-1{
+    width: 48px;
+    height: 48px;
+    background: url('facebook.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-2{
+    width: 48px;
+    height: 48px;
+    background: url('twitter.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-3{
+    width: 48px;
+    height: 48px;
+    background: url('instagram.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-4{
+    width: 48px;
+    height: 48px;
+    background: url('pinterest.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-5{
+    width: 48px;
+    height: 48px;
+    background: url('linkedin.png') no-repeat center center / cover;
+  }
+
+  .flexbox-for-icons{
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    gap: 12px; 
+    margin: 50px auto; 
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: 2px solid gray;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    width: 150%;
+  }
+
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .submit-btn{
+    background-color: rgb(231, 195, 51);
+    color: black;
+    padding: 8px 18px 8px 18px;
+    width: 30%;
+}
+
+.left-side{
+    width: 100%;
+    margin: 0px 0px 48px 48px;
+}
+
+.right-side{
+    width: 100%;
 }
