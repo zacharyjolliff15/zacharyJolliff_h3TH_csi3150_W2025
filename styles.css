@@ -121,7 +121,16 @@ h1, h2, h3, h4, h5, h6 {
 
  #page7{
     width: 100%;
+    min-height: 362px; 
+ }
+
+ #page8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     min-height: 700px; 
+    background: url('contact-us.jpeg') no-repeat center center / cover;
  }
 
 
@@ -272,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    width: 15%;
+    width: 13%;
     height: 200px;
     background: url('testamonial-person.jpg') no-repeat center center / cover;
     border-radius: 50%;
@@ -329,3 +338,77 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
+  .social-media-icons-1{
+    width: 48px;
+    height: 48px;
+    background: url('facebook.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-2{
+    width: 48px;
+    height: 48px;
+    background: url('twitter.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-3{
+    width: 48px;
+    height: 48px;
+    background: url('instagram.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-4{
+    width: 48px;
+    height: 48px;
+    background: url('pinterest.png') no-repeat center center / cover;
+  }
+
+  .social-media-icons-5{
+    width: 48px;
+    height: 48px;
+    background: url('linkedin.png') no-repeat center center / cover;
+  }
+
+  .flexbox-for-icons{
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    gap: 12px; 
+    margin: 50px auto; 
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    border: 2px solid gray;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    width: 150%;
+  }
+
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .submit-btn{
+    background-color: rgb(231, 195, 51);
+    color: black;
+    padding: 8px 18px 8px 18px;
+    width: 30%;
+}
+
+.left-side{
+    width: 100%;
+    margin: 0px 0px 48px 48px;
+}
+
+.right-side{
+    width: 100%;
+}
